@@ -25,12 +25,8 @@
 		<property name="applicationURIs">
 			<list elementClass="java.net.URI">
 				<value>${jboss.server.home.url}deploy</value>
-				
-				<!-- build isolado de servicos e shared  -->
-				<value>file:///C:/Users/jadson/git/servicosintegrados/app/</value>
-				<value>file:///C:/Users/jadson/git/sharedresources/app/</value>
-				<!-- sigeventos   --> 
-				<value>file:///C:/Users/jadson/git/sigeventos/SIGEventos/app/</value>
+				<value>file:/home/nudms/SharedResources/app/</value>
+				<value>file:/home/nudms/SIGEventos/app/</value>
 				
 			</list>
 		</property>
