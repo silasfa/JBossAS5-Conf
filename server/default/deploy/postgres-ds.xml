@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ===================================================================== -->
+<!--                                                                       -->
+<!--  JBoss Server Configuration                                           -->
+<!--                                                                       -->
+<!-- ===================================================================== -->
+
+<!-- $Id: postgres-ds.xml,v 1.1 2002/07/22 22:57:24 d_jencks Exp $ -->
+<!-- ==================================================================== -->
+<!--  Datasource config for Postgres                                      -->
+<!-- ==================================================================== -->
+
+
+<datasources>
+
+
+<!--  Banco comum de todos os sistemas  -->
+
+
+<xa-datasource> 
+
+     <jndi-name>jdbc/ComumDB</jndi-name>
+     <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+	 <xa-datasource-property name="ServerName">bddesenv1.info.ufrn.br</xa-datasource-property>
+	 <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+	 <xa-datasource-property name="DatabaseName">sistemas_comum_20180306</xa-datasource-property>
+	 
+	 <xa-datasource-property name="User">comum_user</xa-datasource-property>
+     <xa-datasource-property name="Password">comum_user</xa-datasource-property>
+	 
+	 <track-connection-by-tx/>
+
+
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+	 
+</xa-datasource>
+
+
+
+<!--   banco comum de erros 
+
+<xa-datasource> 
+
+     <jndi-name>jdbc/ComumDB</jndi-name>
+     <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+	 <xa-datasource-property name="ServerName">erros.info.ufrn.br</xa-datasource-property>
+	 <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+	 <xa-datasource-property name="DatabaseName">sistemas_comum</xa-datasource-property>
+	 
+	 <xa-datasource-property name="User">comum_user</xa-datasource-property>
+     <xa-datasource-property name="Password">comum_user</xa-datasource-property>
+	 
+	 <track-connection-by-tx/>
+
+
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+	 
+</xa-datasource>
+
+-->
+
+
+
+<!--  BANCO DO SIGEVENTOS   -->
+
+<xa-datasource> 
+
+     <jndi-name>jdbc/EventosDB</jndi-name>
+     <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+	 <xa-datasource-property name="ServerName">bddesenv1.info.ufrn.br</xa-datasource-property>
+	 <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+	 <xa-datasource-property name="DatabaseName">sistemas_comum_20180306</xa-datasource-property>
+	 
+	 <xa-datasource-property name="User">comum_user</xa-datasource-property>
+     <xa-datasource-property name="Password">comum_user</xa-datasource-property>
+	 
+	 <track-connection-by-tx/>
+
+
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+	 
+</xa-datasource>
+
+
+
+
+<!--  BANCO DO SIGEVENTOS de Erros 
+
+<xa-datasource> 
+
+     <jndi-name>jdbc/EventosDB</jndi-name>
+     <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+	 <xa-datasource-property name="ServerName">erros.info.ufrn.br</xa-datasource-property>
+	 <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+	 <xa-datasource-property name="DatabaseName">sistemas_comum</xa-datasource-property>
+	 
+	 <xa-datasource-property name="User">comum_user</xa-datasource-property>
+     <xa-datasource-property name="Password">comum_user</xa-datasource-property>
+	 
+	 <track-connection-by-tx/>
+
+
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+	 
+</xa-datasource>
+
+-->
+
+
+
+
+
+<!--  Banco comum de todos os sistemas Homologaccao 
+<xa-datasource> 
+
+     <jndi-name>jdbc/ComumDB</jndi-name>
+     <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+	 <xa-datasource-property name="ServerName">bdgeral.info.ufrn.br</xa-datasource-property>
+	 <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+	 <xa-datasource-property name="DatabaseName">sistemas_comum_8180_20150910</xa-datasource-property>
+	 
+	 <xa-datasource-property name="User">comum_user</xa-datasource-property>
+     <xa-datasource-property name="Password">comum_user</xa-datasource-property>
+	 
+	 <track-connection-by-tx/>
+
+
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+	 
+</xa-datasource>
+-->
+
+
+
+ 
+
+
+<!--     O BANCO do SIGPP       
+<xa-datasource> 
+
+     <jndi-name>jdbc/SIGPPDB</jndi-name>
+     <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+	 <xa-datasource-property name="ServerName">bddesenv1.info.ufrn.br</xa-datasource-property>
+	 <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+	 <xa-datasource-property name="DatabaseName">administrativo_20170911</xa-datasource-property>
+	 
+	 <xa-datasource-property name="User">sipac</xa-datasource-property>
+     <xa-datasource-property name="Password">sipac</xa-datasource-property>
+	 
+	 <track-connection-by-tx/>
+
+
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+	 
+</xa-datasource>
+-->
+
+<!--     O BANCO do SIGPP ERROS      -->
+<xa-datasource> 
+
+     <jndi-name>jdbc/SIGPPDB</jndi-name>
+     <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+	 <xa-datasource-property name="ServerName">erros.info.ufrn.br</xa-datasource-property>
+	 <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+	 <xa-datasource-property name="DatabaseName">administrativo</xa-datasource-property>
+	 
+	 <xa-datasource-property name="User">sipac</xa-datasource-property>
+     <xa-datasource-property name="Password">sipac</xa-datasource-property>
+	 
+	 <track-connection-by-tx/>
+
+
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+	 
+</xa-datasource>
+
+
+<!--     O BANCO do SIGED    
+<xa-datasource> 
+
+     <jndi-name>jdbc/SIGEDDB</jndi-name>
+     <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+	 <xa-datasource-property name="ServerName">bddesenv1.info.ufrn.br</xa-datasource-property>
+	 <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+	 <xa-datasource-property name="DatabaseName">siged_20140204</xa-datasource-property>
+	 
+	 <xa-datasource-property name="User">siged</xa-datasource-property>
+     <xa-datasource-property name="Password">siged</xa-datasource-property>
+	 
+	 <track-connection-by-tx/>
+
+
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+	 
+</xa-datasource> 
+
+   -->
+
+<!--     O BANCO do SIGED ERROS       -->
+<xa-datasource> 
+
+     <jndi-name>jdbc/SIGEDDB</jndi-name>
+     <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+	 <xa-datasource-property name="ServerName">erros.info.ufrn.br</xa-datasource-property>
+	 <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+	 <xa-datasource-property name="DatabaseName">siged</xa-datasource-property>
+	 
+	 <xa-datasource-property name="User">siged</xa-datasource-property>
+     <xa-datasource-property name="Password">siged</xa-datasource-property>
+	 
+	 <track-connection-by-tx/>
+
+
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+	 
+</xa-datasource> 
+
+
+
+<!--     O BANCO do Gerenciador Sites     
+<xa-datasource> 
+
+     <jndi-name>jdbc/PortalDB</jndi-name>
+     <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+	 <xa-datasource-property name="ServerName">bddesenv1.info.ufrn.br</xa-datasource-property>
+	 <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+	 <xa-datasource-property name="DatabaseName">sistemas_comum_20170911</xa-datasource-property>
+	 
+	 <xa-datasource-property name="User">comum_user</xa-datasource-property>
+     <xa-datasource-property name="Password">comum_user</xa-datasource-property>
+	 
+	 <track-connection-by-tx/>
+
+
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+	 
+</xa-datasource> 
+-->
+
+
+<!--     O BANCO do Gerenciador Sites  Erro   -->
+<xa-datasource> 
+
+     <jndi-name>jdbc/PortalDB</jndi-name>
+     <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+	 <xa-datasource-property name="ServerName">erros.info.ufrn.br</xa-datasource-property>
+	 <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+	 <xa-datasource-property name="DatabaseName">sistemas_comum</xa-datasource-property>
+	 
+	 <xa-datasource-property name="User">comum_user</xa-datasource-property>
+     <xa-datasource-property name="Password">comum_user</xa-datasource-property>
+	 
+	 <track-connection-by-tx/>
+
+
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+	 
+</xa-datasource> 
+
+
+
+
+<!--  BANCO DO IPROJECT  -->
+
+
+<xa-datasource> 
+
+     <jndi-name>jdbc/iProjectDB</jndi-name>
+     <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+	 <xa-datasource-property name="ServerName">bddesenv1.info.ufrn.br</xa-datasource-property>
+	 <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+	 <xa-datasource-property name="DatabaseName">sistemas_comum_20180306</xa-datasource-property>
+	 
+	 <xa-datasource-property name="User">comum_user</xa-datasource-property>
+     <xa-datasource-property name="Password">comum_user</xa-datasource-property>
+	 
+	 <track-connection-by-tx/>
+
+
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+	 
+</xa-datasource>
+
+  
+
+
+<!--  BANCO DO IPROJECT  ERROS  
+
+<xa-datasource> 
+
+     <jndi-name>jdbc/iProjectDB</jndi-name>
+     <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+	 <xa-datasource-property name="ServerName">erros.info.ufrn.br</xa-datasource-property>
+	 <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+	 <xa-datasource-property name="DatabaseName">sistemas_comum</xa-datasource-property>
+	 
+	 <xa-datasource-property name="User">comum_user</xa-datasource-property>
+     <xa-datasource-property name="Password">comum_user</xa-datasource-property>
+	 
+	 <track-connection-by-tx/>
+
+
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+	 
+</xa-datasource>
+
+ 
+-->
+
+<!--     O BANCO do SIGED em Homologacao      
+<xa-datasource> 
+
+     <jndi-name>jdbc/SIGEDDB</jndi-name>
+     <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+	 <xa-datasource-property name="ServerName">bdgeral.info.ufrn.br</xa-datasource-property>
+	 <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+	 <xa-datasource-property name="DatabaseName">siged</xa-datasource-property>
+	 
+	 <xa-datasource-property name="User">siged</xa-datasource-property>
+     <xa-datasource-property name="Password">siged</xa-datasource-property>
+	 
+	 <track-connection-by-tx/>
+
+
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+	 
+</xa-datasource>
+
+--> 
+
+<!--     O BANCO do SIGAA       -->
+<xa-datasource> 
+
+     <jndi-name>jdbc/SIGAADB</jndi-name>
+     <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+	 <xa-datasource-property name="ServerName">erros.info.ufrn.br</xa-datasource-property>
+	 <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+	 <xa-datasource-property name="DatabaseName">sigaa</xa-datasource-property>
+	 
+	 <xa-datasource-property name="User">sigaa</xa-datasource-property>
+     <xa-datasource-property name="Password">sigaa</xa-datasource-property>
+	 
+	 <track-connection-by-tx/>
+
+
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+	 
+</xa-datasource>
+
+
+<!-- O banco do SIPAC -->
+<xa-datasource>
+
+     <jndi-name>jdbc/SIPACDB</jndi-name>
+     <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+     <xa-datasource-property name="ServerName">bddesenv1.info.ufrn.br</xa-datasource-property>
+     <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+
+     <xa-datasource-property name="DatabaseName">administrativo_20170911</xa-datasource-property>
+     <xa-datasource-property name="User">sipac</xa-datasource-property>
+     <xa-datasource-property name="Password">sipac</xa-datasource-property>
+
+     <track-connection-by-tx/>
+
+
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+
+
+</xa-datasource> 
+
+
+
+
+<!--  Banco para o portal da ufrn 
+
+<xa-datasource> 
+
+     <jndi-name>jdbc/PortalDB</jndi-name>
+     <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+	 <xa-datasource-property name="ServerName">10.3.224.165</xa-datasource-property>
+	 <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+	 <xa-datasource-property name="DatabaseName">sistemas_comum_20151029</xa-datasource-property>
+	 
+	 <xa-datasource-property name="User">comum_user</xa-datasource-property>
+     <xa-datasource-property name="Password">comum_user</xa-datasource-property>
+	 
+	 <track-connection-by-tx/>
+
+
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+	 
+</xa-datasource>
+
+ -->
+ 
+
+
+
+<!--  sigadmin  -->
+<xa-datasource> 
+
+     <jndi-name>jdbc/SigadminDB</jndi-name>
+     <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+	 <xa-datasource-property name="ServerName">bddesenv1.info.ufrn.br</xa-datasource-property>
+	 <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+	 <xa-datasource-property name="DatabaseName">sistemas_comum_20170911</xa-datasource-property>
+	 
+	 <xa-datasource-property name="User">comum_user</xa-datasource-property>
+     <xa-datasource-property name="Password">comum_user</xa-datasource-property>
+	 
+	 <track-connection-by-tx/>
+
+
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+	 
+</xa-datasource>
+
+
+
+<!-- O banco do SIPAC 
+<xa-datasource>
+
+     <jndi-name>jdbc/SIPACDB</jndi-name>
+     <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+     <xa-datasource-property name="ServerName">10.3.224.165</xa-datasource-property>
+     <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+
+     <xa-datasource-property name="DatabaseName">administrativo_20151029</xa-datasource-property>
+     <xa-datasource-property name="User">sipac</xa-datasource-property>
+     <xa-datasource-property name="Password">sipac</xa-datasource-property>
+
+     <track-connection-by-tx/>
+
+
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+
+
+</xa-datasource> 
+
+-->
+
+<!-- O banco do SIGRH que igual ao SIPAC  -->
+
+<xa-datasource>
+
+ <jndi-name>jdbc/SIGRHDB</jndi-name>
+ <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+ <xa-datasource-property name="ServerName">bddesenv1.info.ufrn.br</xa-datasource-property>
+ <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+
+ <xa-datasource-property name="DatabaseName">administrativo_20170209</xa-datasource-property>
+ <xa-datasource-property name="User">sipac</xa-datasource-property>
+ <xa-datasource-property name="Password">sipac</xa-datasource-property>
+
+ <track-connection-by-tx/>
+
+
+<min-pool-size>1</min-pool-size>
+<max-pool-size>10</max-pool-size>
+
+<check-valid-connection-sql>select 1</check-valid-connection-sql>
+
+
+</xa-datasource>
+
+
+
+<!--
+  <local-tx-datasource>
+    <jndi-name>jdbc/SIPACDB</jndi-name>
+    <connection-url>jdbc:postgresql://desenvolvimento.info.ufrn.br:5432/administrativo3</connection-url>
+    <driver-class>org.postgresql.Driver</driver-class>
+    <user-name>sipac</user-name>
+    <password>sipacDesenv</password>
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>20</max-pool-size>
+    <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    <blocking-timeout-millis>5000</blocking-timeout-millis> 
+    <idle-timeout-minutes>5</idle-timeout-minutes>
+  </local-tx-datasource>
+
+
+  <local-tx-datasource>
+    <jndi-name>jdbc/SIGAADB</jndi-name>
+    <connection-url>jdbc:postgresql://desenvolvimento.info.ufrn.br:5432/sigaa_02012008
+</connection-url>
+    <driver-class>org.postgresql.Driver</driver-class>
+    <user-name>sigaa</user-name>
+    <password>sigaa</password>
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+    <check-valid-connection-sql>select count(*) from subsistema</check-valid-connection-sql>
+    <blocking-timeout-millis>5000</blocking-timeout-millis> 
+    <idle-timeout-minutes>1</idle-timeout-minutes>
+  </local-tx-datasource>
+-->
+
+
+
+
+
+<!--  Banco de testes do update geral 
+
+<xa-datasource> 
+
+     <jndi-name>jdbc/SIGAADB</jndi-name>
+     <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+     <xa-datasource-property name="ServerName">10.3.225.108</xa-datasource-property> 
+     <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+
+     <xa-datasource-property name="DatabaseName">sigaa_update_201005</xa-datasource-property>
+     <xa-datasource-property name="User">sigaa</xa-datasource-property>
+     <xa-datasource-property name="Password">sigaa</xa-datasource-property>
+
+     <track-connection-by-tx/>
+
+
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+
+</xa-datasource>  -->
+
+
+
+
+<!-- Antigo  
+<xa-datasource>
+
+     <jndi-name>jdbc/SIGAADB</jndi-name>
+     <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+     <xa-datasource-property name="ServerName">desenvolvimento3.info.ufrn.br</xa-datasource-property> 
+	 
+     <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+
+     <xa-datasource-property name="DatabaseName">sigaa_update_geral</xa-datasource-property>
+     <xa-datasource-property name="User">sigaa</xa-datasource-property>
+     <xa-datasource-property name="Password">sigaa</xa-datasource-property>
+
+     <track-connection-by-tx/>
+
+
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+
+</xa-datasource> -->
+
+<!--
+
+<xa-datasource>
+
+     <jndi-name>jdbc/SIGRHDB</jndi-name>
+     <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+     <xa-datasource-property name="ServerName">desenvolvimento.info.ufrn.br</xa-datasource-property>
+     <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+
+     <xa-datasource-property name="DatabaseName">administrativo</xa-datasource-property>
+     <xa-datasource-property name="User">sipac</xa-datasource-property>
+     <xa-datasource-property name="Password">sipacDesenv</xa-datasource-property>
+
+     <track-connection-by-tx/>
+
+
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+
+
+</xa-datasource> -->
+
+
+
+<!-- Banco comum de testes do update geral  
+<xa-datasource>
+
+     <jndi-name>jdbc/ComumDB</jndi-name>
+     <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+     <xa-datasource-property name="ServerName">10.3.225.108</xa-datasource-property> 
+	 <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+
+     <xa-datasource-property name="DatabaseName">sistemas_comum</xa-datasource-property>
+     <xa-datasource-property name="User">comum_user</xa-datasource-property>
+     <xa-datasource-property name="Password">comum_user</xa-datasource-property>
+
+     <track-connection-by-tx/>
+
+
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+
+
+</xa-datasource>  -->
+
+
+
+
+
+
+
+
+   <!--  Base de Logs antiga em banco de dados que não será mais utilizada 
+
+   <local-tx-datasource>
+    <jndi-name>jdbc/LogOperacaoDB</jndi-name>
+    <connection-url>jdbc:postgresql://10.3.224.165:5432/sistemas_log</connection-url>
+    <driver-class>org.postgresql.Driver</driver-class>
+    <user-name>sistemas_log</user-name>
+    <password>sistemas_log</password>
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+    <blocking-timeout-millis>5000</blocking-timeout-millis>
+    <idle-timeout-minutes>1</idle-timeout-minutes>
+  </local-tx-datasource>
+-->
+
+<!--	
+  <xa-datasource>
+		<jndi-name>jdbc/LogOperacaoDB</jndi-name>
+		<xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+
+		<xa-datasource-property name="ServerName">bddesenv.info.ufrn.br</xa-datasource-property>
+
+		<xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+		<xa-datasource-property name="DatabaseName">admlog_desenv</xa-datasource-property>
+		<xa-datasource-property name="User">admlog</xa-datasource-property>
+		<xa-datasource-property name="Password">admlog</xa-datasource-property>
+		<track-connection-by-tx/>
+		<min-pool-size>1</min-pool-size>
+		<max-pool-size>10</max-pool-size>
+		<check-valid-connection-sql>select 1</check-valid-connection-sql>
+ </xa-datasource> 
+
+<xa-datasource>
+	<jndi-name>jdbc/LogOperacaoSIGAA</jndi-name>
+	<xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+
+	<xa-datasource-property name="ServerName">10.3.224.165</xa-datasource-property>
+
+	<xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+	<xa-datasource-property name="DatabaseName">sistelas_log</xa-datasource-property>
+	<xa-datasource-property name="User">sigaalog</xa-datasource-property>
+	<xa-datasource-property name="Password">sigaalog</xa-datasource-property>
+	<track-connection-by-tx/>
+	<min-pool-size>1</min-pool-size>
+	<max-pool-size>10</max-pool-size>
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+</xa-datasource>
+-->
+
+<!--  Base de Meta Dados dos Arquivos  -->
+
+<xa-datasource>
+	<jndi-name>jdbc/ArquivosDB</jndi-name>
+	<xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+
+	<xa-datasource-property name="ServerName">erros.info.ufrn.br</xa-datasource-property>
+
+	<xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+	<xa-datasource-property name="DatabaseName">base_arquivos</xa-datasource-property>
+	<xa-datasource-property name="User">arquivos</xa-datasource-property>
+	<xa-datasource-property name="Password">arquivos</xa-datasource-property>
+	<track-connection-by-tx/>
+	<min-pool-size>1</min-pool-size>
+	<max-pool-size>10</max-pool-size>
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+</xa-datasource>
+
+
+ <xa-datasource>
+   <jndi-name>jdbc/ArquivosNode1</jndi-name>
+   <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+   <xa-datasource-property name="ServerName">erros.info.ufrn.br</xa-datasource-property>
+   <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+
+   <xa-datasource-property name="DatabaseName">base_arquivos</xa-datasource-property>
+   <xa-datasource-property name="User">arquivos</xa-datasource-property>
+   <xa-datasource-property name="Password">arquivos</xa-datasource-property>
+
+   <track-connection-by-tx/>
+
+
+  <min-pool-size>1</min-pool-size>
+  <max-pool-size>5</max-pool-size>
+
+  <check-valid-connection-sql>select 1</check-valid-connection-sql>
+
+
+ </xa-datasource>
+
+ 
+ 
+<!--
+<xa-datasource>
+	<jndi-name>jdbc/ArquivosNode1</jndi-name>
+	<xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+
+	<xa-datasource-property name="ServerName">10.3.224.165</xa-datasource-property>
+
+	<xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+	<xa-datasource-property name="DatabaseName">base_arquivos</xa-datasource-property>
+	<xa-datasource-property name="User">arquivos</xa-datasource-property>
+	<xa-datasource-property name="Password">arquivos</xa-datasource-property>
+	<track-connection-by-tx/>
+	<min-pool-size>1</min-pool-size>
+	<max-pool-size>10</max-pool-size>
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+	</xa-datasource>
+
+<xa-datasource>
+	<jndi-name>jdbc/ArquivosNode2</jndi-name>
+	<xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+
+	<xa-datasource-property name="ServerName">10.3.224.165</xa-datasource-property>
+
+	<xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+	<xa-datasource-property name="DatabaseName">base_arquivos</xa-datasource-property>
+	<xa-datasource-property name="User">arquivos</xa-datasource-property>
+	<xa-datasource-property name="Password">arquivos</xa-datasource-property>
+	<track-connection-by-tx/>
+	<min-pool-size>1</min-pool-size>
+	<max-pool-size>10</max-pool-size>
+	<check-valid-connection-sql>select 1</check-valid-connection-sql>
+</xa-datasource>-->
+
+
+<!--  Banco do iproject 
+
+ <local-tx-datasource>
+    <jndi-name>jdbc/iProjectDB</jndi-name>
+    <connection-url>jdbc:postgresql://localhost:5432/sistemas_comum</connection-url>
+    <driver-class>org.postgresql.Driver</driver-class>
+    <user-name>comum_user</user-name>
+    <password>comum_user</password>
+    <min-pool-size>1</min-pool-size>
+    <max-pool-size>10</max-pool-size>
+    <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    <blocking-timeout-millis>5000</blocking-timeout-millis> 
+    <idle-timeout-minutes>10</idle-timeout-minutes>
+ </local-tx-datasource>
+
+-->
+
+</datasources>

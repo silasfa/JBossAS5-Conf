@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><iprojectBuildInformation><baseVersion>3.23.0</baseVersion><startVersion>3.22.21</startVersion><system>SIGAA</system><tasks><buildReleaseDate>2016-05-07 07:36:14.0</buildReleaseDate><buildVersion>3.22.24</buildVersion><changeLogs>Refatoracao no cadastro de turmas, modulo metropole digital.</changeLogs><creationDate>2015-07-10 12:17:26.997</creationDate><equipe>EQUIPE SISTEMAS</equipe><logs>Revisao 44a727d36b1de278cb69f344ce7f06434373d50d por Lucas Alessio [ lucas.alessio@info.ufrn.br ]
+
+U   SIGAA/app/sigaa.ear/sigaa.war/metropole_digital/tutoria/form.jsp
+U   SIGAA/arq/br/ufrn/sigaa/arq/negocio/SigaaListaComando.java
+U   SIGAA/metropole_digital/br/ufrn/sigaa/ensino/metropoledigital/dao/TutoriaIMDDao.java
+U   SIGAA/metropole_digital/br/ufrn/sigaa/ensino/metropoledigital/jsf/TutoriaIMDMbean.java
+A   SIGAA/metropole_digital/br/ufrn/sigaa/ensino/metropoledigital/negocio/MovimentoTurmaEntradaIMD.java
+A   SIGAA/metropole_digital/br/ufrn/sigaa/ensino/metropoledigital/negocio/ProcessadorTurmaEntradaIMD.java
+U   SIGAA/metropole_digital/br/ufrn/sigaa/ensino/metropoledigital/negocio/ProcessadorTutoriaMI.java
+
+</logs><percentage>100</percentage><projectDescription>IMD</projectDescription><responsableName>LUCAS ALESSIO ANUNCIADO SILVA</responsableName><sistema>SIGAA</sistema><subsistema>METROPOLE DIGITAL</subsistema><taskDescription>Foi identificado que o caso de uso de Cadastro de Turmas esta fora dos padroes de desenvolvimento.&lt;br /&gt;Os dados estao sendo salvos via MBean. Refatorar o caso de uso para se enquadrar nos padroes da arquitetura de camadas.</taskDescription><taskName>Refatorar Cadastro de Turma</taskName><taskNumber>160998</taskNumber><taskStatusDescription>FINALIZADA</taskStatusDescription><taskTypeDescription>APRIMORAMENTO</taskTypeDescription></tasks><tasks><buildReleaseDate>2016-05-07 07:36:14.0</buildReleaseDate><buildVersion>3.22.24</buildVersion><changeLogs>Adicionado as funcionalidades de gerenciamento de turmas e emissao de historico na aba do coordenador de polo.</changeLogs><creationDate>2015-09-01 15:55:33.756</creationDate><equipe>EQUIPE SISTEMAS</equipe><logs>Revisao 6793cd23be9fce3b6a55f0398a9f66bd1b07b74e por Lucas Alessio [ lucas.alessio@info.ufrn.br ]
+
+U   SIGAA/app/sigaa.ear/sigaa.war/metropole_digital/menus/coordenador_polo.jsp
+U   SIGAA/app/sigaa.ear/sigaa.war/metropole_digital/tutoria/form.jsp
+U   SIGAA/app/sigaa.ear/sigaa.war/metropole_digital/tutoria/form_tutor.jsp
+U   SIGAA/app/sigaa.ear/sigaa.war/metropole_digital/tutoria/lista.jsp
+U   SIGAA/metropole_digital/br/ufrn/sigaa/ensino/metropoledigital/jsf/RelatoriosCoordenadorPoloIMDMBean.java
+
+</logs><percentage>100</percentage><projectDescription>IMD</projectDescription><responsableName>LUCAS ALESSIO ANUNCIADO SILVA</responsableName><sistema>SIGAA</sistema><subsistema>METROPOLE DIGITAL</subsistema><taskDescription>Adicionar na aba de coordenador de polo:&lt;br /&gt;&lt;br /&gt;- Cadastro de Turmas&lt;br /&gt;- Emissao de historico dos discentes</taskDescription><taskName>Acesso dos coordenadores de Polo</taskName><taskNumber>164052</taskNumber><taskStatusDescription>FINALIZADA</taskStatusDescription><taskTypeDescription>APRIMORAMENTO</taskTypeDescription></tasks><tasks><buildReleaseDate>2016-04-20 08:42:15.0</buildReleaseDate><buildVersion>3.22.21</buildVersion><changeLogs>https://www.info.ufrn.br/wikisistemas/doku.php?id=desenvolvimento:especificacoes:sigaa:medio:casos_de_uso:turma:turma:cadastrar_turma_dependencia&lt;br&gt;&lt;br&gt;SIGAA &amp;#8594; Medio &amp;#8594; Turma &amp;#8594; Turma &amp;#8594; Cadastrar Turma de Dependencia.</changeLogs><changeLogs>https://www.info.ufrn.br/wikisistemas/doku.php?id=desenvolvimento:especificacoes:sigaa:medio:casos_de_uso:turma:turma:cadastrar_turma_dependencia&lt;br&gt;&lt;br&gt;SIGAA &amp;#8594; Medio &amp;#8594; Turma &amp;#8594; Turma &amp;#8594; Cadastrar Turma de Dependencia.</changeLogs><changeLogs>https://www.info.ufrn.br/wikisistemas/doku.php?id=desenvolvimento:especificacoes:sigaa:medio:casos_de_uso:turma:turma:cadastrar_turma_dependencia&lt;br&gt;&lt;br&gt;SIGAA &amp;#8594; Medio &amp;#8594; Turma &amp;#8594; Turma &amp;#8594; Cadastrar Turma de Dependencia.</changeLogs><changeLogs>Varias correcoes na manutencao de turmas regulares e de dependencia do ensino MEDIO.</changeLogs><changeLogs>Varias correcoes na manutencao de turmas regulares e de dependencia do ensino MEDIO.</changeLogs><changeLogs>Varias correcoes na manutencao de turmas regulares e de dependencia do ensino MEDIO.</changeLogs><changeLogs>Varias correcoes na manutencao de turmas regulares e de dependencia do ensino MEDIO.</changeLogs><changeLogs>Varias correcoes na manutencao de turmas regulares e de dependencia do ensino MEDIO.</changeLogs><creationDate>2016-01-19 08:35:27.789</creationDate><equipe>EQUIPE SISTEMAS</equipe><logs>-Corrigido problema na listagem dos calendarios globais;
+-Alterado no codigo para que o sistema busque nao so por um ano vigente do calendario e sim pelo ano passado pelo usuario, sem restricao de vigencia;  
+
+SIGAA &amp;#8594; Medio &amp;#8594; Turma &amp;#8594; Turma &amp;#8594; Cadastrar Turma de Dependencia.
+
+Login: duiene
+
+Revisao 186199 por rafaelmoura
+
+U   trunk/SIGAA/arq_dao/br/ufrn/sigaa/arq/dao/ensino/CalendarioAcademicoDao.java
+U   trunk/SIGAA/ensino/br/ufrn/sigaa/ensino/dominio/ConvenioAcademico.java
+U   trunk/SIGAA/ensino/br/ufrn/sigaa/ensino/dominio/CurriculoGenerico.java
+U   trunk/SIGAA/ensino/br/ufrn/sigaa/ensino/negocio/CalendarioAcademicoHelper.java
+U   trunk/SIGAA/medio/br/ufrn/sigaa/ensino/medio/jsf/CalendarioSimplificadoMBean.java
+U   trunk/SIGAA/medio/br/ufrn/sigaa/ensino/medio/jsf/TurmaSerieEspecialMBean.java
+
+</logs><logs>SIGAA &amp;#8594; Medio &amp;#8594; Turma &amp;#8594; Turma &amp;#8594; Cadastrar Turma de Dependencia.
+Login: duiene
+
+-Corrigido erro das datas que nao estavam batendo;
+-Corrigida a mensagem de erro;
+-Corrigido para o sistema buscar por qualquer calendario independente de ser vigente ou nao.
+
+Revisao 186349 por rafaelmoura
+
+U   trunk/SIGAA/ensino/br/ufrn/sigaa/ensino/negocio/TurmaValidator.java
+U   trunk/SIGAA/medio/br/ufrn/sigaa/ensino/medio/jsf/TurmaSerieEspecialMBean.java
+
+</logs><logs>Revisao 186662 por julio
+
+
+U   trunk/SIGAA/app/sigaa.ear/sigaa.war/ensino/calendario_simplificado/calendarios.jsp
+U   trunk/SIGAA/app/sigaa.ear/sigaa.war/medio/menu_medio.jsp
+A   trunk/SIGAA/app/sigaa.ear/sigaa.war/medio/menus/administracao.jsp
+U   trunk/SIGAA/app/sigaa.ear/sigaa.war/medio/menus/curso.jsp
+U   trunk/SIGAA/app/sigaa.ear/sigaa.war/medio/turmaSerie/formTurmaEspecial.jsp
+U   trunk/SIGAA/app/sigaa.ear/sigaa.war/medio/turmaSerie/formTurmaSerie.jsp
+U   trunk/SIGAA/ensino/br/ufrn/sigaa/ensino/negocio/CalendarioAcademicoHelper.java
+U   trunk/SIGAA/medio/br/ufrn/sigaa/ensino/medio/jsf/TurmaSerieEspecialMBean.java
+U   trunk/SIGAA/medio/br/ufrn/sigaa/ensino/medio/jsf/TurmaSerieMBean.java
+U   trunk/SIGAA/medio/br/ufrn/sigaa/ensino/medio/negocio/ProcessadorTurmaEspecial.java
+U   trunk/SIGAA/medio/br/ufrn/sigaa/ensino/medio/negocio/ProcessadorTurmaSerie.java</logs><logs>Revisao 186724 por julio
+
+U   trunk/SIGAA/ensino/br/ufrn/sigaa/ensino/negocio/ParametrosGestoraAcademicaHelper.java
+U   trunk/SIGAA/medio/br/ufrn/sigaa/ensino/medio/dao/TurmaSerieDao.java
+U   trunk/SIGAA/medio/br/ufrn/sigaa/ensino/medio/jsf/TurmaSerieEspecialMBean.java
+U   trunk/SIGAA/medio/br/ufrn/sigaa/ensino/medio/jsf/TurmaSerieMBean.java</logs><logs>Revisao 186848 por julio
+
+
+U   trunk/SIGAA/app/sigaa.ear/sigaa.war/medio/menus/curso.jsp
+U   trunk/SIGAA/app/sigaa.ear/sigaa.war/medio/turmaSerie/formTurmaEspecial.jsp
+U   trunk/SIGAA/app/sigaa.ear/sigaa.war/medio/turmaSerie/formTurmaSerie.jsp
+U   trunk/SIGAA/app/sigaa.ear/sigaa.war/medio/turmaSerie/panelCurriculo.jsp
+U   trunk/SIGAA/ensino/br/ufrn/sigaa/ensino/negocio/CalendarioAcademicoHelper.java
+U   trunk/SIGAA/medio/br/ufrn/sigaa/ensino/medio/dao/CurriculoMedioDao.java
+U   trunk/SIGAA/medio/br/ufrn/sigaa/ensino/medio/jsf/CalendarioSimplificadoMBean.java
+U   trunk/SIGAA/medio/br/ufrn/sigaa/ensino/medio/jsf/TurmaSerieEspecialMBean.java
+U   trunk/SIGAA/medio/br/ufrn/sigaa/ensino/medio/jsf/TurmaSerieMBean.java</logs><logs>Revisao 186886 por julio
+
+U   trunk/SIGAA/arq_dao/br/ufrn/sigaa/arq/dao/ensino/CalendarioAcademicoDao.java
+U   trunk/SIGAA/ensino/br/ufrn/sigaa/ensino/negocio/CalendarioAcademicoHelper.java</logs><logs>ERROS CORRIGIDOS.
+
+Revisao 187089 por julio
+
+U   trunk/SIGAA/ensino/br/ufrn/sigaa/ensino/negocio/CalendarioAcademicoHelper.java
+U   trunk/SIGAA/ensino/br/ufrn/sigaa/ensino/negocio/TurmaValidator.java
+U   trunk/SIGAA/medio/br/ufrn/sigaa/ensino/medio/jsf/TurmaSerieEspecialMBean.java</logs><logs>Revisao 3d221841630e4e7642334279ec644f0c2fcda00a por Julio Cesar dos Santos [ julio@info.ufrn.br ]
+
+U   SIGAA/medio/br/ufrn/sigaa/ensino/medio/jsf/TurmaSerieEspecialMBean.java</logs><percentage>100</percentage><projectDescription>UFRRJ</projectDescription><responsableName>MARLUCIO BARBOSA</responsableName><revisionRelease>98198</revisionRelease><sistema>SIGAA</sistema><subsistema>MEDIO</subsistema><taskDescription>&lt;span style="font-family: verdana; font-size: 14px;"&gt;O sistema esta obrigando um curso a ter um calendario para poder cadastrar uma turma de dependencia e isso nao e o comportamento esperado. &lt;br /&gt;&lt;br /&gt;O sistema deveria buscar o calendario global, caso nao tenha o calendario do curso.   Ao tentar criar uma turma de dependencia no nivel medio, o sistema reclama que nao ha calendario academico cadastrado para o ano desejado e o curso selecionado, porem ha um calendario global para o ano desejado.&lt;br /&gt;&lt;br /&gt;Esse ticket esta sendo aberto sob a orientacao do Consultor Tecnico do SIGAA. &lt;/span&gt;</taskDescription><taskName>Erro ao cadastrar turma de dependencia SIGAA-Medio</taskName><taskNumber>170860</taskNumber><taskStatusDescription>CONCLUIDA</taskStatusDescription><taskTypeDescription>ERRO DE EXECUCAO</taskTypeDescription></tasks><tasks><buildReleaseDate>2016-05-19 22:07:46.0</buildReleaseDate><buildVersion>3.23.0</buildVersion><changeLogs>No vinculo de discente, pelo caminho SIGAA -&gt; ENSINO -&gt; EMITIR DECLARACAO DE VINCULO&lt;br&gt;&lt;br&gt;Substituicao do termo "CGC" por "CNPJ" no documento de declaracao de vinculo que foi gerado.&lt;br&gt;</changeLogs><changeLogs>No vinculo de discente, pelo caminho SIGAA -&gt; ENSINO -&gt; EMITIR DECLARACAO DE VINCULO&lt;br&gt;&lt;br&gt;Substituicao do termo "CGC" por "CNPJ" no documento de declaracao de vinculo que foi gerado.&lt;br&gt;</changeLogs><creationDate>2016-03-04 16:33:04.947</creationDate><equipe>EQUIPE SISTEMAS</equipe><logs>No vinculo de discente, pelo caminho SIGAA -&gt; ENSINO -&gt; EMITIR DECLARACAO DE VINCULO
+
+Substituicao do termo "CGC" por "CNPJ" no documento de declaracao de vinculo que foi gerado.
+
+Revisao ce79432b13a13ecd0a788586941d5e8eb182e29f por MariaClara [ MariaClara ]
+
+U   SIGAA/geral/br/ufrn/sigaa/relatorios/fontes/declaracao_vinculo_graduacao.jasper
+
+</logs><logs>Erro do relatorio de testes corrigido. Correcao do nome "CGC" para "CNPJ" em declaracoes para vinculo lato, stricto e de disciplinas ministradas tambem.
+
+Revisao fe7ec682395483bb22fb7fbf6e30c26fd1810d2f por MariaClara [ MariaClara ]
+
+U   SIGAA/geral/br/ufrn/sigaa/relatorios/fontes/declaracao_disciplinas_ministradas.jasper
+U   SIGAA/geral/br/ufrn/sigaa/relatorios/fontes/declaracao_disciplinas_ministradas.jrxml
+U   SIGAA/geral/br/ufrn/sigaa/relatorios/fontes/declaracao_vinculo_lato.jasper
+U   SIGAA/geral/br/ufrn/sigaa/relatorios/fontes/declaracao_vinculo_lato.jrxml
+U   SIGAA/geral/br/ufrn/sigaa/relatorios/fontes/declaracao_vinculo_stricto.jasper
+U   SIGAA/geral/br/ufrn/sigaa/relatorios/fontes/declaracao_vinculo_stricto.jrxml
+
+</logs><percentage>100</percentage><projectDescription>IFC</projectDescription><responsableName>FERNANDO DA CRUZ PINHEIRO</responsableName><sistema>SIGAA</sistema><subsistema>GRADUACAO</subsistema><taskDescription>Ola,&lt;br /&gt;&lt;br /&gt;Gostaria de pedir para que altere  a informacao de 'CGC' para 'CNPJ'  no relatorio 'Emitir declaracao de vinculo/cadastro' no SIGAA. Tal informacao vem fixo no relatorio que esta na fonte declaracao_vinculo_graduacao.jrxml no caminho /SIGAA/geral/br/ufrn/sigaa/relatorios/fontes.&lt;br /&gt;&lt;br /&gt;Em anexo envio a declaracao com destaque para o erro.&lt;br /&gt;&lt;br /&gt;Obrigado.</taskDescription><taskName>Trocar CGC por CNPJ</taskName><taskNumber>173661</taskNumber><taskStatusDescription>FINALIZADA</taskStatusDescription><taskTypeDescription>DEFEITO CONHECIDO</taskTypeDescription></tasks><tasks><buildReleaseDate>2016-05-18 23:53:48.0</buildReleaseDate><buildVersion>3.22.26</buildVersion><changeLogs>Incluido os status da turma apos a consolidacao final: "Reprovado por Frequencia" e "Aprovado por Nota".</changeLogs><creationDate>2016-04-08 16:18:01.808</creationDate><equipe>EQUIPE SISTEMAS</equipe><logs>Revisao 9fa57a7f13f9c36fece508f75132618b8c069aa1 por Lucas Alessio [ lucas.alessio@info.ufrn.br ]
+
+U   SIGAA/app/sigaa.ear/sigaa.war/metropole_digital/consolidacao/relatorio_consolidacao_final.jsp
+U   SIGAA/app/sigaa.ear/sigaa.war/metropole_digital/lancar_notas_disciplina/form.jsp
+U   SIGAA/metropole_digital/br/ufrn/sigaa/ensino/metropoledigital/dominio/SituacaoMatriculaTurma.java
+U   SIGAA/metropole_digital/br/ufrn/sigaa/ensino/metropoledigital/jsf/ConsolidacaoFinalIMDMbean.java
+U   SIGAA/metropole_digital/br/ufrn/sigaa/ensino/metropoledigital/negocio/ProcessadorConsolidacaoFinal.java
+
+</logs><percentage>100</percentage><projectDescription>IMD</projectDescription><responsableName>ITANILDO AUGUSTO SINNESIO DANTAS</responsableName><sistema>SIGAA</sistema><subsistema>METROPOLE DIGITAL</subsistema><taskDescription>Incluir os seguintes status da turma apos a consolidacao final:&lt;br /&gt;"Reprovado por Frequencia" e "Aprovado por Nota"&lt;br /&gt;&lt;br /&gt;</taskDescription><taskName>Ajustes na consolidacao - melhorias na atribuicao do status final </taskName><taskNumber>175753</taskNumber><taskStatusDescription>FINALIZADA</taskStatusDescription><taskTypeDescription>APRIMORAMENTO</taskTypeDescription></tasks><tasks><buildReleaseDate>2016-05-18 23:53:48.0</buildReleaseDate><buildVersion>3.22.26</buildVersion><changeLogs>No cadastro dos parametros do sistema, o sistema exibia numeros em vez de letras ao selecionar o metodo de avaliacao por conceito.&lt;br&gt;Foi feita uma alteracao na pagina para exibir as medias como letras.&lt;br&gt;&lt;br&gt;</changeLogs><changeLogs>No cadastro dos parametros do sistema, o sistema exibia numeros em vez de letras ao selecionar o metodo de avaliacao por conceito.&lt;br&gt;Foi feita uma alteracao na pagina para exibir as medias como letras.&lt;br&gt;&lt;br&gt;</changeLogs><creationDate>2016-04-18 15:51:23.386</creationDate><equipe>EQUIPE SISTEMAS</equipe><logs>Correcao dos erros de teste.
+
+Revisao 26aa0ba0432f216bf9679dd4131b59c3065d1fa1 por arthur [ arthurmacedo@info.ufrn.br ]
+
+U   SIGAA/app/sigaa.ear/sigaa.war/administracao/parametros/valores.jsp
+U   SIGAA/geral/br/ufrn/sigaa/jsf/ParametrosGestoraAcademicaMBean.java</logs><logs>--Ultima solicitacao. Correcao do erro de testes.
+Revisao 44fc989d64fb8b58229927de3cb4d292168067e2 por arthur [ arthurmacedo@info.ufrn.br ]
+
+U   SIGAA/app/sigaa.ear/sigaa.war/administracao/parametros/valores.jsp
+U   SIGAA/geral/br/ufrn/sigaa/jsf/ParametrosGestoraAcademicaMBean.java
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Atualizado em homologacao por ANDRE MEDEIROS em 16/05/2016 09:50 (SIGAA 3.22.26)
+Correcao dos erros de teste.
+
+Revisao 26aa0ba0432f216bf9679dd4131b59c3065d1fa1 por arthur [ arthurmacedo@info.ufrn.br ]
+
+U   SIGAA/app/sigaa.ear/sigaa.war/administracao/parametros/valores.jsp
+U   SIGAA/geral/br/ufrn/sigaa/jsf/ParametrosGestoraAcademicaMBean.java 
+
+
+ChangeLog:
+No cadastro dos parametros do sistema, o sistema exibia numeros em vez de letras ao selecionar o metodo de avaliacao por conceito.
+Foi feita uma alteracao na pagina para exibir as medias como letras.
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+Atualizado para producao por RAFAEL GOMES em 16/05/2016 08:40
+QUAL ERA O PROBLEMA?
+No cadastro dos parametros do sistema, o sistema exibia numeros em vez de letras ao selecionar o metodo de avaliacao por conceito.
+
+COMO E O QUE FOI CORRIGIDO?
+
+Foi feita uma alteracao na pagina para exibir as medias como letras.
+
+A ALTERACAO REALIZADA IMPACTA OUTROS CASOS DE USO?
+
+Nao.
+
+Revisao 141ebd057fc891ea7957b6226b5367732a6e0c28 por arthur [ arthurmacedo@info.ufrn.br ]
+
+U   SIGAA/app/sigaa.ear/sigaa.war/administracao/parametros/valores.jsp
+U   SIGAA/geral/br/ufrn/sigaa/jsf/ParametrosGestoraAcademicaMBean.java 
+
+
+ChangeLog:
+No cadastro dos parametros do sistema, o sistema exibia numeros em vez de letras ao selecionar o metodo de avaliacao por conceito.
+Foi feita uma alteracao na pagina para exibir as medias como letras.
+</logs><percentage>100</percentage><projectDescription>UFRRJ</projectDescription><responsableName>CAIO MARCELO SABADIN ADAO</responsableName><sistema>SIGAA</sistema><subsistema>STRICTO SENSU</subsistema><taskDescription>Ao tentar mapear os parametros do sistema para o STRICTO SENSU, em metodo de avaliacao, ao escolher conceito, notei que os seguintes campos: media minima de aprovacao, media minima que possibilite recuperacao e media minima de aprovacao para passar na media, nao permitem conceitos (tipo A, B, C,D), e mesmo nao permitindo letras, os campos sao obrigatorios.</taskDescription><taskName>Metodo de Avaliacao por Conceitos nao permite letras</taskName><taskNumber>176271</taskNumber><taskStatusDescription>FINALIZADA</taskStatusDescription><taskTypeDescription>ERRO DE NEGOCIO/VALIDACAO</taskTypeDescription></tasks><tasks><buildReleaseDate>2016-04-27 01:19:43.0</buildReleaseDate><buildVersion>3.22.22</buildVersion><changeLogs>o combo mencionado agora carrega todas as unidades academicas</changeLogs><creationDate>2016-04-26 09:34:58.041</creationDate><equipe>EQUIPE SISTEMAS</equipe><logs>Revisao:b157b6af526a5401c35560727cec65feb537635b
+
+
+
+</logs><percentage>100</percentage><projectDescription>IFC</projectDescription><responsableName>TIAGO HEINECK</responsableName><sistema>SIGAA</sistema><subsistema>INTEGRADO</subsistema><taskDescription>Estamos configurando o modulo integrado e encontramos o seguinte erro, na tela referida e possivel somente trazer unidades com curso cadastrado, porem para quem esta iniciando o uso do sistema ou tem uma unidade mae que nao tem cursos e que as unidades filhas usam as mesmas configuracoes nao e possivel realizar tal feito.&lt;br /&gt;&lt;br /&gt;O ideal seria que somente selecionando o nivel INTEGRADO ja permitisse configuracao, independente de selecao de unidades, como uma configuracao global do modulo</taskDescription><taskName>Campo Unidade Responsavel trazendo somente unidades com curso</taskName><taskNumber>176595</taskNumber><taskStatusDescription>FINALIZADA</taskStatusDescription><taskTypeDescription>ERRO DE NEGOCIO/VALIDACAO</taskTypeDescription></tasks><tasks><buildReleaseDate>2016-05-04 09:50:00.0</buildReleaseDate><buildVersion>3.22.23</buildVersion><changeLogs>Foi corrigido o erro para nao aparecer o status CUMPRIU no modulo no historico, no caso em que o aluno nao cumpriu todas as disciplinas.</changeLogs><creationDate>2016-04-26 11:18:10.024</creationDate><equipe>EQUIPE SISTEMAS</equipe><logs>Revisao:187348
+U   trunk/SIGAA/ensino/br/ufrn/sigaa/ensino/negocio/ProcessadorCalculaHistorico.java
+
+
+</logs><percentage>100</percentage><projectDescription>IMD</projectDescription><responsableName>ITANILDO AUGUSTO SINNESIO DANTAS</responsableName><revisionRelease>99917</revisionRelease><sistema>SIGAA</sistema><subsistema>METROPOLE DIGITAL</subsistema><taskDescription>Verificar por que os discentes que aproveitaram somente algumas disciplinas do modulo estao aparecendo com o status cumpriu no modulo</taskDescription><taskName>Ajuste no historico - Alguns discentes aparecem com o status CUMPRIU no modulo</taskName><taskNumber>176609</taskNumber><taskStatusDescription>FINALIZADA</taskStatusDescription><taskTypeDescription>ERRO DE NEGOCIO/VALIDACAO</taskTypeDescription></tasks><tasks><buildReleaseDate>2016-05-04 09:50:00.0</buildReleaseDate><buildVersion>3.22.23</buildVersion><changeLogs>LazyInitializationException corrigido. Ocorria no relacionamento ManyToOne com o discente.&lt;br&gt;&lt;br&gt;SIGAA -&gt; STRICTO SENSU -&gt; ALUNOS -&gt; DADOS DO DISCENTE -&gt; CADASTRO DE OBSERVACAO DE DISCENTE&lt;br&gt;&lt;br&gt;Nao houve alteracao no caso de uso.&lt;br&gt;&lt;br&gt;login: maribondo</changeLogs><creationDate>2016-04-27 16:51:25.942</creationDate><equipe>EQUIPE SISTEMAS</equipe><logs>LazyInitializationException corrigido. Ocorria no relacionamento ManyToOne com o discente.
+
+SIGAA -&gt; STRICTO SENSU -&gt; ALUNOS -&gt; DADOS DO DISCENTE -&gt; CADASTRO DE OBSERVACAO DE DISCENTE
+
+Nao houve alteracao no caso de uso.
+
+Espec.: https://www.info.ufrn.br/wikisistemas/doku.php?id=desenvolvimento:especificacoes:sigaa:graduacao:casos_de_uso:alunos:dados_do_discente:editar_observacoes_do_discente
+
+login: maribondo
+
+Revisao 467db35b por Vitor Greati [ vitorgreati@hotmail.com ]
+
+U   SIGAA/graduacao/br/ufrn/sigaa/ensino/graduacao/jsf/ObservacaoDiscenteMBean.java
+
+</logs><percentage>100</percentage><projectDescription>UFRRJ</projectDescription><responsableName>CLARISSA LORENA ALVES COELHO LINS</responsableName><sistema>SIGAA</sistema><subsistema>STRICTO SENSU</subsistema><taskDescription>Ao tentar cadastrar observacoes no discente, temos a  mensagem de LazyInitializationException.&lt;br /&gt;Conforme print anexo.</taskDescription><taskName>LazyInitializationException em Cadastro de Observacao de Discente</taskName><taskNumber>176750</taskNumber><taskStatusDescription>FINALIZADA</taskStatusDescription><taskTypeDescription>ERRO DE EXECUCAO</taskTypeDescription></tasks><tasks><buildReleaseDate>2016-05-16 08:40:58.0</buildReleaseDate><buildVersion>3.22.25</buildVersion><changeLogs>Correcao da consulta para evitar o sql injection.&lt;br&gt;&lt;br&gt;Verificar se a consulta continua funcionando normalmente.&lt;br&gt;&lt;br&gt;Caminho: portal publico &gt; ensino &gt; consulta de cursos - graduacao</changeLogs><creationDate>2016-05-10 15:02:50.141</creationDate><equipe>EQUIPE SISTEMAS</equipe><logs>Revisao 35aa39ef2476f53e1be01860f453afd37b26bd36 por Andre M Dantas [ amdantas@info.ufrn.br ]
+
+U   SIGAA/arq_dao/br/ufrn/sigaa/arq/dao/CursoDao.java
+
+</logs><percentage>100</percentage><projectDescription>UFS</projectDescription><responsableName>ANDRE MEDEIROS DANTAS</responsableName><sistema>SIGAA</sistema><subsistema>PORTAL PUBLICO - CURSOS</subsistema><taskDescription>A correcao ta disponivel: http://version.info.ufrn.br/cooperacao/branches/ufs/branches/manutencao/SIGAA/arq_dao/br/ufrn/sigaa/arq/dao/CursoDao.java&lt;br /&gt;&lt;br /&gt;Metodo "findConsultaPublica".&lt;br /&gt;&lt;br /&gt;Se precisar de mais informacoes, estou a disposicao para esclarecimentos.</taskDescription><taskName>Correcao de SQL na consulta de cursos do portal publico</taskName><taskNumber>177481</taskNumber><taskStatusDescription>FINALIZADA</taskStatusDescription><taskTypeDescription>ERRO DE EXECUCAO</taskTypeDescription></tasks><tasks><buildReleaseDate>2016-05-19 22:07:46.0</buildReleaseDate><buildVersion>3.23.0</buildVersion><changeLogs>O sistema deve informar que o interessado nao tem usuario registrado e nao causar um erro. </changeLogs><creationDate>2016-05-16 11:57:40.371</creationDate><equipe>EQUIPE SISTEMAS</equipe><logs>Revisao 52bb505a1202500c4b6584d8fe0be6abec9befbe por Alisson Nascimento [ alissonsn@info.ufrn.br ]
+
+U   SIGAA/stricto_sensu/br/ufrn/sigaa/ensino/stricto/dominio/InteressadoProcessoSeletivo.java
+U   SIGAA/stricto_sensu/br/ufrn/sigaa/ensino/stricto/jsf/InteressadoProcessoSeletivoMBean.java
+
+</logs><percentage>100</percentage><projectDescription>UFRRJ</projectDescription><responsableName>JULIO CESAR DOS SANTOS</responsableName><sistema>SIGAA</sistema><subsistema>LATO SENSU</subsistema><taskDescription>Ao tentar cadastrar um interessado em divulgar processos seletivos de LATO SENSU, caso o interessado nao tenha usuario registrado, um CI e apresentado.&lt;br /&gt;&lt;br /&gt;
+&lt;div&gt;2016-05-16 11:53:12,143 ERROR [STDERR] (ajp-0.0.0.0-8109-13) org.hibernate.PropertyValueException: not-null property references a null or transient value: br.ufrn.sigaa.ensino.stricto.dominio.InteressadoProcessoSeletivo.usuario&lt;/div&gt;
+ &lt;br /&gt;&lt;br /&gt;O sistema deve informar que o interessado nao tem usuario registrado e nao causar um erro.</taskDescription><taskName>Erro ao cadastrar interessado que nao tenha usuario</taskName><taskNumber>177753</taskNumber><taskStatusDescription>FINALIZADA</taskStatusDescription><taskTypeDescription>ERRO DE EXECUCAO</taskTypeDescription></tasks></iprojectBuildInformation>
